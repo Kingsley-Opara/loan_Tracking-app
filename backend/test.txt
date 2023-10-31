@@ -1,0 +1,7 @@
+BuUMIPVuuqz37lP9
+oparaudochukwu kingboy
+
+kingboy
+dzPoP8BMm3ut4gI2
+
+mongodb+srv://kingboy:<password>@fastapi.anikowp.mongodb.net/?retryWrites=true&w=majority
