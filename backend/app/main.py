@@ -18,7 +18,7 @@ app = FastAPI()
 
 origins = [
     "http://localhost:3000",
-    '*'
+    '*',
 
 ]
 
@@ -94,7 +94,7 @@ async def login_view(response: Response, login: LoginSchema = Body(...)):
         response.set_cookie('jwt_token', token, 
                             datetime.timedelta(days= 30), 
                             datetime.timedelta(days= 30),
-                            '/', None, False, True, 'lax')
+                            '/login/', None, False, True, 'lax')
         return {'token': token}
     
 

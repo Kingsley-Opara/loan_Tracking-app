@@ -80,7 +80,7 @@ function SidebarComponents() {
                 },
                 }}
             >
-                <MenuItem component='home'>
+                <MenuItem >
                     <Container>
                         <div className='flex flex-row space-x-4'>
                             <img src={overview} alt='' className='object-contain'/>
@@ -89,7 +89,7 @@ function SidebarComponents() {
                     </Container>
                     
                 </MenuItem>
-                <MenuItem component='home'>
+                <MenuItem >
                     <Container>
                         <div className='flex flex-row space-x-4'>
                             <img src={tickets} alt='' className='object-contain'/>
@@ -97,7 +97,7 @@ function SidebarComponents() {
                         </div>    
                     </Container> 
                 </MenuItem>
-                <MenuItem component='home'>
+                <MenuItem >
                     <Container>
                         <div className='flex flex-row space-x-4'>
                             <LightbulbIcon/>
@@ -106,7 +106,7 @@ function SidebarComponents() {
                         </div>    
                     </Container> 
                 </MenuItem>
-                <MenuItem component='home'>
+                <MenuItem >
                     <Container>
                         <div className='flex flex-row space-x-4'>
                             <GroupsIcon/>
@@ -115,7 +115,7 @@ function SidebarComponents() {
                         </div>    
                     </Container> 
                 </MenuItem>
-                <MenuItem component='home'>
+                <MenuItem >
                     <Container>
                         <div className='flex flex-row space-x-4'>
                             <PersonIcon/>
@@ -124,7 +124,7 @@ function SidebarComponents() {
                         </div>    
                     </Container> 
                 </MenuItem>
-                <MenuItem component='home'>
+                <MenuItem >
                     <Container>
                         <div className='flex flex-row space-x-4'>
                             <ArticleIcon/>
@@ -148,7 +148,7 @@ function SidebarComponents() {
                 }}
                 className='mt-[5rem]'
             >
-                <MenuItem component='home'>
+                <MenuItem >
                         <Container>
                         <div className='flex flex-row space-x-4'>
                             <SettingsIcon/>
@@ -158,7 +158,7 @@ function SidebarComponents() {
                     </Container>
                 </MenuItem>
 
-                <MenuItem component='home'>                    
+                <MenuItem >                    
                     <Container>
                         <div className='flex flex-row space-x-4'>
                             <img src={subscription} alt='' className='object-contain'/>
