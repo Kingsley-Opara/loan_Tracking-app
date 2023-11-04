@@ -11,7 +11,7 @@ export default AuthContext;
 
 
 export const AuthProvider = ({children}) =>{
-    let error = null
+    const [error, setError] = useState(null)
     const fetcher = async (e) =>{
         
         e.preventDefault()
@@ -31,11 +31,13 @@ export const AuthProvider = ({children}) =>{
         const username = decodeToken && decodeToken.username
         username && setCookie('username', username, 60 )
         console.log(username)
+        const errorMsg = await results.detail
 
-        if (!requestLogin.ok && requestLogin.status != 200){
+        if (errorMsg != null){
             // error = await results.detail
-            // console.log(error)
-            console.log('bad')
+            // console.log(error
+            setError(errorMsg)
+            console.log(error)
         }
         
 
@@ -44,7 +46,7 @@ export const AuthProvider = ({children}) =>{
     
     const authData = {
         'login': fetcher,
-        'error': error
+        'error': error,
         
     }
     return(

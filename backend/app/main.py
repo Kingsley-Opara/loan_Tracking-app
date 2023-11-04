@@ -97,6 +97,7 @@ async def login_view(response: Response, login: LoginSchema = Body(...)):
                             '/login/', None, False, True, 'lax')
         return {'token': token}
     
+    
 
     return HTTPException(status_code=400, detail='Invalid credentail....consider creating an account')
     

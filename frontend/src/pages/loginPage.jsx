@@ -4,7 +4,7 @@ function LoginPage() {
     const {login, error} = useContext(AuthContext)
   return (
     <div className="ml-20 mt-8 place-content-center sm:ml-[10rem]">
-        <h5>{error ? error : null}</h5>               
+        <h5 className="text-red-500">{error ? error : null}</h5>               
         <form onSubmit={login}>
             <div className="mb-6">
                 <label htmlFor="email" className="form-label">Your email</label>
