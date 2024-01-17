@@ -56,8 +56,7 @@ class UserSignUpSchema(BaseModel):
     
     @root_validator(pre =True)
     def deposited_amount(cls, values):
-        role = values.get('role')
-        if role != 'admin':
+        if (role := values.get('role')) != 'admin':
             values['deposit'] = 100
         return values
     
