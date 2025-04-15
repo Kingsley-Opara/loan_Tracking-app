@@ -1,7 +1,6 @@
 from celery import Celery
 from app.config import get_settings
-# from app.random_generator import randomly_generate_profit
-import random
+import secrets
 
 
 celery_app = Celery(__name__)
@@ -23,7 +22,7 @@ def setup_periodic_tasks(sender, *args, **kwargs):
 
 @celery_app.task
 def random_profit_tasks():
-    profit = random.randint(100, 10000)
+    profit = secrets.SystemRandom().randint(100, 10000)
     print(profit)
     return profit
 
